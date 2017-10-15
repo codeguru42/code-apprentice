@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 1"
+date:   2017-10-14 18:00:00 -0600
+categories: 100DaysOfCode
+---
+
+Today is my first day of #100DaysOfCode. The first task was to set up this blog. I am using [Jekyll][1] to host this directly on [GitHub][2]. I encountered some issues when setting the `url` parameter in the `_config.yml` file. For now I am leaving it as an empty string since putting my actual domain seems to cause problems.
+
+I have several personal projects that I want to work on over the next 100 days. I already have GitHub repositories for most of these on GitHub:
+
+* [Baseball Card Tracker][3] - This is an Android app which I started several years ago. I have a long list of additional features and bug fixes in the issue tracker. My first goal with this app is to create a REST API with Django.
+* [pytrade][4] - Python module which interfaces with the ETrade API.
+* [rosalind][6] - Solutions to problems at [rosalind.info][8]
+* [Project Euler][5] - Solutions to [Project Euler problems][9]
+* [Mathy Bird][6] - Clone of Flappy Bird with an educational twist
+* [Crypto Pals][7] - Solutions to [Crypto Pals problems][10]
+
+pytrade and the Crypto Pals solutions are both in Python and will give me more practice. My solutiosn to Rosalind and Project Euler problems are in Haskell. I want to explore this language further and become better at it. As I mentioned above, I also want to learn backend web development with Django. I also want to build a web-based frontend as a companion for the Baseball Card Tracker Android app.
+
+These are just a few of the projects that I want to work on. I know I won't finish them all in the next 100 days. My goal is to pick one or two of them and work an hour each day improving what I already started. 
+
+[1]:https://jekyllrb.com/
+[2]:https://github.com/codeguru42/code-apprentice
+[3]:https://github.com/BaseballCardTracker/bbct
+[4]:https://github.com/codeguru42/pytrade
+[5]:https://github.com/codeguru42/projecteuler
+[6]:https://github.com/codeguru42/mathy-bird
+[7]:https://github.com/codeguru42/crypto
+[8]:http://rosalind.info
+[9]:https://projecteuler.net/
+[10]:http://cryptopals.com/
