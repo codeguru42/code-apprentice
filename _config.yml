@@ -16,10 +16,7 @@
 title: Code Apprentice
 email: apprentice@codeapprentice.info
 description: >- # this means to ignore newlines until "baseurl:"
-  I am a professional Software Engineer. I created this blog to report my
-  progress on the #100DaysOfCode challenge. I am using this as an incentive
-  to work on my personal projects. I also plan to continue blogging about
-  other topics of interest as I continue my professional journey.
+  Professional Software Engineer. Doing #100DaysOfCode for personal projects.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: codeguru42
