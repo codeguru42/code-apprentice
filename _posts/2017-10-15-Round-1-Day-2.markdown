@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 2"
+date:   2017-10-15 12:00:00 -0600
+categories: 100DaysOfCode
+---
+
+Today I started working through the [Django polls app tutorial][1]. My progress so far is on [my GitHub][2] in the [django-polls repo][3]. My goal is to create a web-based app that compliments my [Baseball Card Tracker app for Android][4]. The first step is to create a REST API for the baseball card data.
+
+The past two days I struggled with setting up the domain for this blog. I finally tracked it down to some erroneous DNS settings. Hopefully I fixed it and the site will be stable in the future.
+
+Since I started this on the weekend, finding time for the first two days of the challenge has been fairly easy. The only problem is that I have not set a specific time for this activity, yet. I am pretty busy during the week, so I am trying to find a regular time that I can sit and code every day. I am leaning towards doing it early in the morning before getting ready to go to work. Trying to do this in the evenings seems more likely to fail since I often have other activities already planned most weeknights.
+
+My goal is to get up an hour and a half earlier than usual tomorrow morning to code and blog about it. I am making this commitment more public so that I have some stronger motivation to follow through.
+
+[1]:https://docs.djangoproject.com/en/1.11/intro/tutorial01/
+[2]:https://github.com/codeguru42
+[3]:https://github.com/codeguru42/django-polls
+[4]:https://play.google.com/store/apps/details?id=bbct.android
