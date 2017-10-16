@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 3"
+date:   2017-10-16 07:30:00 -0600
+categories: 100DaysOfCode
+---
+
+Today I continue my Django journey. I put in an extra hour last night and got up early this morning to continue where I left off. Continuing [the polls Django tutorial][1], I learned about the following things:
+
+* Create views
+* Create a URL Conf file to parse and route URLs
+* Create models
+* Configure a database
+* Create database migrations
+* Use templates for views
+
+[1]:https://docs.djangoproject.com/en/1.11/intro/tutorial01/
