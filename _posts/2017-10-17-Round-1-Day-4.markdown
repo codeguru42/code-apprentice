@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 4"
+date:   2017-10-17 07:30:00 -0600
+categories: 100DaysOfCode
+---
+
+Today I started to create [a REST API][1] for [Baseball Card Tracker][2] ([source on GitHub][3]). [Here is my progress][4] at the end of my time this morning. So far I only created models for the data that the first version of the API will support. My next task is to create the views and routes for the actual API. I will most likely continue with the Polls tutorial to learn more about how to do this.
+
+While working today, I opened my app project in Android Studio and decided to download an update in the background while I continued to work. After it downloaded and startd to install, my system became so bogged down that my machine did not respond to keyboard or mouse input for several minutes. This seriously limited my productivity for most of the last half hour of my work this morning. I need to find room in my budget to upgrade my CPU and RAM to help mitigate these kinds of issues. This is moving up on my priority list.
+
+[1]:https://github.com/BaseballCardTracker/bbct-web/
+[2]:https://play.google.com/store/apps/details?id=bbct.android
+[3]:https://github.com/BaseballCardTracker/bbct
+[4]:https://github.com/BaseballCardTracker/bbct-web/tree/62a73b80c34a903adb3e4536269720872edb7dad
