@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 5"
+date:   2017-10-18 07:30:00 -0600
+categories: 100DaysOfCode
+---
+
+Today I continued working through the Django polls tutorial and added some views to my BBCT REST API. The views are just endpoints for the API. I need to work out in more detail the exact design of the API. This includes such details versioning and pathing.
