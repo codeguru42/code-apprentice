@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 6"
+date:   2017-10-19 2000:00:00 -0600
+categories: 100DaysOfCode
+---
+
+Yesterday I attempted to change the theme of this blog to make it look a little prettier. The end result was that my domain delivered a blank page. None of my posts were available. I didn't have time to figure out how to fix it and spend my coding time this morning working it out. It should be up and running now and I will continue working with Django tomorrow. I will also attempt to figure out Jekyll themes in the next few days.
