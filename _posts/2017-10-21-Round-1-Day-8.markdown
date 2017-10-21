@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 8"
+date:   2017-10-21 17:40:00 -0600
+categories: 100DaysOfCode
+---
+
+Today I continued writing the REST API for BBCT. I followed Test Driven Development (red, green, refactor) as well as I know how. I am happy with the final result. The final result is [17 lines of code for models][1] and [26 lines of code for views][2]. Testing the views required [50 lines of code][3]. I am not completely satisfied with the tests and am considering porting them to pytest which has more powerful features for parametrizing tests.
+
+Beyond massaging the tests, my next tasks are to host this API. I will shop around for cloud services. Amazon AWS and Google Cloud are top contenders here. If anyone has suggestions or recommendations, feel free to contact me on Twitter.
+
+[1]:https://github.com/BaseballCardTracker/bbct-web/blob/284b3718439b1b2139bd7cff621eb220d864b0ee/backend/api/models.py
+[2]:https://github.com/BaseballCardTracker/bbct-web/blob/284b3718439b1b2139bd7cff621eb220d864b0ee/backend/api/views.py
+[3]:https://github.com/BaseballCardTracker/bbct-web/blob/284b3718439b1b2139bd7cff621eb220d864b0ee/backend/api/views.py
