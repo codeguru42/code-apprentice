@@ -5,4 +5,14 @@ date:   2017-10-20 08:00:00 -0600
 categories: 100DaysOfCode
 ---
 
+Morning
+==
+
 Today I continued work on the REST API for BBCT. I reviewed how to query the database with Django's Models API. Then I read about serializing objects to JSON in order to return data in a response. Then I started learning how to write auotmated tests n my Django project.
+
+Evening
+==
+
+I had some time to do about about two hours more coding this evening. While researching details about Django, including testing, routing, etc., I occassionally got distracted by other things and chased tangents to my primary concern. For example, I discovered a python package which brings pytest testing to Django. I have used pytest extensively at work and it has a lot to offer. In the end, I have decided to use the unittest-based framework that Django supports directly.
+
+Despite the distractions, I made some significant progress. I want to follow strict TDD as I develop, so I am writing tests first and then implementing the feature tested. I already implemented my primary models and routes earlier this week without any testing. I started with a test to verify that one particular route exists (i.e. responds with a 200 HTTP code). Next I implemented a test to verify that a GET request to that route returns the expected JSON response. Finally, I worked on serliazing a model to JSON and returning it as a response. I encountered problems with getting my test to pass. I will work on this some more tomorrow.
