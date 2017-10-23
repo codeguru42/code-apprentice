@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 10"
+date:   2017-10-23 08:00:00 -0600
+categories: 100DaysOfCode
+---
+
+I am unsatisfied with the directory structure of my Django project. First of all, I want something that is more friendly to work with in IntelliJ IDEA. This means having separate `src` and `test` directories, which is just a good habit anyway. Right now, I have a single `tests.py` file with my tests which lives next to the implementation files for my Django app.
+
+This morning I attempted to rearrange the directory structure. I seemed to have messed it all up. I can run the server, but when I navigate to one of my end points, I get an error about a missing database table. Then when I run `python manage.py makemigrations`, I get a message that everything is up to date. (My apologies for not having the exact wording available at this moment.) I still get the same error if I delete the entire `migrations` folder.
+
+I don't understand why I can't build my migrations anew. I am out of time this morning, so I will have to work on it tomorrow.
