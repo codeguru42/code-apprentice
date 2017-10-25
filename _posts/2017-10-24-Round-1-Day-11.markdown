@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 11"
+date:   2017-10-24 21:25:00 -0600
+categories: 100DaysOfCode
+---
+
+I woke up this morning to code and after eating breakfast decided to go back to sleep. I still got a little time in before going to work. I tried to get my desired directory structure to work with Django and found that I need to keep my Django app at the same level as the project.
+
+So moving on...I found more time to code tonight and started to implement POST requests. I want to have separate methods for POST and GET and learned that I will need to use classes to do this rather than the functions that I currently do. I will read more about how this works in the morning.
