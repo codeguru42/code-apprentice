@@ -5,4 +5,4 @@ date:   2017-10-27 02:15:00 -0600
 categories: 100DaysOfCode
 ---
 
-I slacked on this block for the last two days and am now playing catch up. On Wednesday, I converted my Django views from stand-alone functions to class members. This allowed me to create a single class for all four views. The class contains a member which specifies the Model subclass to use. To start, the class only had a single method to respond to GET requests. The plan was to provide a second method for POST requests.
+I slacked on this blog for the last two days and am now playing catch up. On Wednesday, I converted my Django views from stand-alone functions to class members. This allowed me to create a single class for all four views. The class contains a member which specifies the Model subclass to use. To start, the class only had a single method to respond to GET requests. The plan was to provide a second method for POST requests.
