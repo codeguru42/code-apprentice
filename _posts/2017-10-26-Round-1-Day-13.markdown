@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 13"
+date:   2017-10-27 02:20:00 -0600
+categories: 100DaysOfCode
+---
+
+Yesterday I attempted to implement a `post()` method in my new View class. I learned that `request.POST` can only be used to read form data. In my project, I intend to read JSON data sent as the body of the HTTP request. So far, I have relied on the default serialization to convert my Model subclasses to a JSON string. It looks like I may need to write my own serializers in order to get the behavior I want.
