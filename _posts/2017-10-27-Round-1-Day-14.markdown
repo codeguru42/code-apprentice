@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 14"
+date:   2017-10-27 22:15:00 -0600
+categories: 100DaysOfCode
+---
+
+Tonight, I coded for an hour and a half as well as read a lot of Django documentation. I implemented finished implementing a simple POST handler that inserts a single item to the database. I want to modify this to take an entire list instead. Single items can be inserted by sending a list with one element.
+
+I also started implementing query strings for my GET handler. I learned about Full Text Search, which appears to be supported by many database engines. I don't think I need the full power of this feature yet, but it will be handy when my database becomese more complex. I currently have only four tables each with a single column (other than the primary key). For now I want to send a single query string and return all rows of a table which contain that string in the single column. I will increase the complexity of this as necessary in the future.
