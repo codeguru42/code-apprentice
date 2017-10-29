@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 15"
+date:   2017-10-28 23:30:00 -0600
+categories: 100DaysOfCode
+---
+
+I finished the first version of my REST API for real tonight. I implemented query parameters for the GET handler and modified the POST handler to accept a JSON list rather than a single object.
+
+I was stuck on the query parameters for the last several days. My difficulty was with the `request.GET` variable provided by Django. The documentation describes this as a "dict-like object". Specifically, it is an instance of `QueryParams`. I attempted to pass it directly to `filter()` with `models.filter(**request.GET)`. This doesn't work because each key refers to a list. In my case, I pass a single query parameter and then my GET handler sees a list with only one value in it. I ended up writing a dictionary comprehension to unpack the query parameters from `request.GET`. This provided the added benefit that it was very easy to use `__icontains`. My GET handler will now return every row which contains the given query parameter as a substring.
+
+For anyone interested, the final result is on my GitHub [here][1]. Tomorrow I will continue learning about hosting my API, most likely with Google AppEngine.
+
+[1]:https://github.com/BaseballCardTracker/bbct-web/tree/339c0968e6a66e49ec9a420033a508d6f8b6a9a8
