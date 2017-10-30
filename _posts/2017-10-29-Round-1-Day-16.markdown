@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 16"
+date:   2017-10-29 20:00:00 -0600
+categories: 100DaysOfCode
+---
+
+I am learning how to host a Django app with Google App Engine. Following the instructions in [the official tutorial tutorial][1], I encountered a problem after creating a Cloud SQL instance. It says to type `gcloud sql instances describe [YOUR_INSTANCE_NAME]` at the command line. When I do so, I get the following error:
+
+    $ gcloud sql instances describe django-polls-184415:us-west1:polls
+    ERROR: (gcloud.sql.instances.describe) Instance names cannot contain the ':' character. If you meant to indicate the
+    project for [polls], use only 'polls' for the argument, and either add
+    '--project django-polls-184415:us-west1' to the command line or first run
+      $ gcloud config set project django-polls-184415:us-west1
+
+So I do exactly what the error message says:
+
+    $ gcloud config set project django-polls-184415:us-west1          
+    Updated property [core/project].
+    $ gcloud sql instances describe polls                             
+ERROR: (gcloud.sql.instances.describe) HTTPError 403: The client is not authorized to make this request.
+
+I am completely stuck here. I will work on this some more in the morning. If anyone has any suggestions please tweet me.
+
+[1]:https://cloud.google.com/python/django/appengine
