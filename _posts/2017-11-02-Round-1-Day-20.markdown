@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 20"
+date:   2017-11-02 07:30:00 -0600
+categories: 100DaysOfCode GoogleCloud
+---
+
+The last several days have been very frustrating as I try to follow [this tutorial][1] to run Django on Google App Engine. I was doing just fine until I got to the steps to create a Cloud SQL instance. When I got to the step that says
+
+> Now use the Cloud SDK from command line to run the following command. Copy the value shown for connectionName for the next step.
+
+> gcloud sql instances describe [YOUR_INSTANCE_NAME]
+
+> The connectionName value is in the format [PROJECT_NAME]:[REGION_NAME]:[INSTANCE_NAME].
+
+I tried this:
+
+    $ gcloud sql instances describe myproject:myregion:myinstance
+
+which gave an error:
+
+    ERROR: (gcloud.sql.instances.describe) Instance names cannot contain the ':' character. If you meant to indicate the
+project for [myinstance], use only 'myinstance' for the argument, and either add
+'--project myproject:myregion' to the command line or first run
+  $ gcloud config set project myproject:myinstance
+
+When I tried what this message suggests, I got
+
+    $ gcloud config set project myproject:myregion
+    Updated property [core/project].
+    $ gcloud sql instances describe myinstance
+    ERROR: (gcloud.sql.instances.describe) HTTPError 403: The client is not authorized to make this request.
+    $ gcloud sql instances describe --project myproject:myinstance myinstance
+    ERROR: (gcloud.sql.instances.describe) HTTPError 403: The client is not authorized to make this request.
+
+The problem is that I did not read the instructions closely enough. In the original command, I only need to specify the instance:
+
+    $ gcloud sql instances describe myinstance
+
+Before doing this, I corrected my mistake in setting the project:
+
+    $ gcloud config set project myproject
+
+Now the previous command works!
+
+[1]:https://cloud.google.com/python/django/appengine
