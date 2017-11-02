@@ -17,8 +17,8 @@ So I do exactly what the error message says:
 
     $ gcloud config set project django-polls-184415:us-west1          
     Updated property [core/project].
-    $ gcloud sql instances describe polls                             
-ERROR: (gcloud.sql.instances.describe) HTTPError 403: The client is not authorized to make this request.
+    $ gcloud sql instances describe polls
+    ERROR: (gcloud.sql.instances.describe) HTTPError 403: The client is not authorized to make this request.
 
 I am completely stuck here. I will work on this some more in the morning. If anyone has any suggestions please tweet me.
 
