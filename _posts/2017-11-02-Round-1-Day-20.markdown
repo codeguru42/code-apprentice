@@ -8,9 +8,9 @@ categories: 100DaysOfCode GoogleCloud
 The last several days have been very frustrating as I try to follow [this tutorial][1] to run Django on Google App Engine. I was doing just fine until I got to the steps to create a Cloud SQL instance. When I got to the step that says
 
 > Now use the Cloud SDK from command line to run the following command. Copy the value shown for connectionName for the next step.
-
+>
 > gcloud sql instances describe [YOUR_INSTANCE_NAME]
-
+>
 > The connectionName value is in the format [PROJECT_NAME]:[REGION_NAME]:[INSTANCE_NAME].
 
 I tried this:
