@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 23"
+date:   2017-11-05 10:30:00 -0600
+categories: 100DaysOfCode GoogleCloud
+---
+
+I finished [the tutorial to run a Django app on Google App Engine][1] today. It turns out my struggles with Cloud SQL were unecessary to get this to run. The version of the Dajango Polls tutorial used in the GAE tutorial only has a "Hello, World" page. This is only [part 1 of the Django tutorial][2] and does not have the rest of the polls app which uses the database.
+
+Goals for this week:
+
+1. Host my BBCT REST API on GAE.
+
+2. Implement authentication with Google OAuth.
+
+3. Learn if I can use a MySQL database hosted in my Cloud Storage rather than using Cloud SQL. Also learn about the advantages and disadvantages of doing so.
+
+[1]:https://cloud.google.com/python/django/appengine
+[2]:https://docs.djangoproject.com/en/1.11/intro/tutorial01/
