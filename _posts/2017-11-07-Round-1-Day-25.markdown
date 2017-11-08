@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 25"
+date:   2017-11-07 21:30:00 -0600
+categories: 100DaysOfCode GoogleCloud
+---
+
+I wrote [my first Docker][2] file today following [the example on the official Docker site][1]. However, when I build my container and run it with `docker run -p 4000:8000 bbct-rest` I do not get any output. I found a plugin for IntelliJ that supports Docker. I installed it and configured it to run my container. I get the expected output from my Django app, but I am not sure how to access it in my browser. I mapped port 8000 from the container to port 8000 on my host machine. However, http://localhost:8000 does not give the expected page from my Django project. I need to learn more about how a Docker container interacts with the host machine.
+
+[1]:https://docs.docker.com/get-started/part2/
+[2]:https://github.com/BaseballCardTracker/bbct-web/blob/docker/backend/Dockerfile
