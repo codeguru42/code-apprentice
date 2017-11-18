@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 36"
+date:   2017-11-18 11:45:00 -0600
+categories: 100DaysOfCode aws django
+---
+
+I have slacked off quite a lot over the past two weeks. I spend a little time every day working on tasks related to my REST API but not a full hour most days. I am frustrated with the details of hosting the API. I enjoy coding but not setting up the infrastructure to deploy the final product.
+
+Earlier this week, I had some success with deploying to AWS Elastic Beanstalk. My first attempt deployed the code but I immediately got an error when querying an endpoint because there was no database to connect to. This was a good sign because the error came from the code I wrote and Django. I learned that by default, the `eb` command-line tool uses the .gitignore file in my git repostitory to determine which files should be ignored on deployment. You can override this behavior by providing a .ebignore file. This allows me to ignore SQLite dataabase file from version control but still deploy it with the Python code to AWS Elastic Beanstalk. Once the database was deployed, GET requests responded correctly.
+
+The next step is to fix POST requests. I installed Postman in order to test my API more thoroughly than I can do easily with a browser. When I use this program to send a POST request, the API replies with "Forbidden (403) CSRF verification failed." From what I can tell, I need to either turn off CSRF verification or implement authentication. I am going the later route.
+
+To impelement authentication, I have decided to use Django Rest Framework. I have been reading the docs for the past few days for 15 to 30 minutes. Since I am using this library, I going all out. I will use it for more than just the authentication. Yesterday I started implementing serializers, and I continued with them this morning. This has already simplified the code for my REST API. After I finish with this step, I will look at ModelViews and ModelViewSets.
