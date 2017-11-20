@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "100 Days of Code - Round 1 - Day 38"
+date:   2017-11-20 08:00:00 -0600
+categories: 100DaysOfCode aws django
+---
+
+What happens to the database when I deploy a new version of my API to production? Currently I am deploying the database as a .sqlite3 file along with the code. If the production database contains data, it will be replaced by the new database file. I read about running Django migrations after deploying to AWS Elatstic Beanstalk. However, I think this will create the database anew rather than modify the existing database as necessary. I need to determine how to preserve existing data from the production environment while also modifying the database schema as required by the new version. This might require me to move to Amazon RDS and another database engine, such as MySQL.
